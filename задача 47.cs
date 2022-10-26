@@ -30,10 +30,10 @@ void PrintArray(double[,] array)
     }
 }
 Console.Clear();
-Console.WriteLine("Введите n");
-int linesVol = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Bведите m");
-int columnsVol = Convert.ToInt32(Console.ReadLine());
-double[,] numbers = new double[linesVol, columnsVol];
-GetArray(numbers);
+Console.WriteLine("Введите m");
+int m = int.Parse(Console.ReadLine());
+Console.WriteLine("Bведите n");
+int n = int.Parse(Console.ReadLine());
+double[,] numbers = new double[m, n];
+FillArrayRandomNumbers(numbers);
 PrintArray(numbers);
